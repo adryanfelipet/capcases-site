@@ -160,7 +160,15 @@ h2{font-size:clamp(32px,5vw,52px);font-weight:800}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
-</head>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2305704220219227');
+fbq('track','PageView');
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href*="wa.me"],a[href*="api.whatsapp.com"]');if(a&&window.fbq)fbq('track','Contact');},true);
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2305704220219227&ev=PageView&noscript=1" alt=""></noscript>
+<!-- Fim do Meta Pixel --></head>
 <body>
 <div class="fundo" aria-hidden="true"></div>
 <header class="top">
